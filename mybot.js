@@ -1,10 +1,10 @@
 var Bot = require('slackbots');
 
-//settings
+// Settings
 var settings = {
 
-     token: '<Put API token HERE>',
-     name: 'funbot'
+     token: 'oxb-179102533538-14z5DTAaWiHyDnqY9mivOajP',
+     name: 'WolfIn'
 };
 
 var channel='leads' ;
@@ -13,7 +13,7 @@ var bot = new Bot(settings);
 
 bot.on('start', function(){
                
-               bot.postMessageToChannel(channel, 'Hello Channel. I am successfuly connected');
+               bot.postMessageToChannel(channel, 'Hello Channel. I am connected to the channel!');
 
               }
      );
@@ -27,9 +27,9 @@ bot.on('message',  function(message){
             	if(typeof message.channel === 'string'  && message.channel[0] === 'C')
             	{
             		console.log(message.text.toLowerCase());
-            		if(message.text.toLowerCase().indexOf('@u3zpp1aav') > -1 )
+            		if(message.text.toLowerCase().indexOf('@u5930fpfu') > -1 )
             		{
-            			bot.postMessageToChannel(channel, "Hey there ! welcome to bot world");
+            			bot.postMessageToChannel(channel, "Hey there! Welcome to the slack channel!");
             		}
             	}
             }
