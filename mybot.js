@@ -62,7 +62,7 @@ function getCommandType(command)
 
  function getChartAnswer(command)
  {
-      //command : '@funbot draw chart type:pi data:{60,40,20} legends:{USA,UK,Russia}';
+      //command : '@WolfIn draw chart type:pi data:{60,40,20} legends:{USA,UK,Russia}';
       var answer = "";
       var data = command.split(/ /i);
       var chartType = data[3].split(/:/i)[1];
